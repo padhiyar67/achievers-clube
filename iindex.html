@@ -2,111 +2,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Achievers Club | Masterclass Registration</title>
+  <title>Registration Successful</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #1a1a40, #2d2d86);
+      background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
       color: #fff;
-    }
-    header {
-      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
       text-align: center;
-      background: #111133;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2em;
-      color: #ffcc00;
-    }
-    .container {
-      padding: 30px;
-      max-width: 800px;
-      margin: auto;
-      background: rgba(0,0,0,0.6);
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px;
       border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     }
-    .form-section {
+    h1 {
+      color: #00ffcc;
+      font-size: 2.5em;
       margin-bottom: 20px;
     }
-    label {
-      display: block;
-      margin-bottom: 5px;
+    p {
+      font-size: 1.2em;
       color: #ffcc99;
+      margin-bottom: 30px;
     }
-    input, select, textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border: none;
-      border-radius: 8px;
-    }
-    button {
+    .btn {
       background-color: #ffcc00;
-      color: #1a1a40;
+      color: #000;
       padding: 12px 25px;
       border: none;
       border-radius: 10px;
       font-size: 1em;
-      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.3s;
     }
-    button:hover {
+    .btn:hover {
       background-color: #ffaa00;
-    }
-    .section-title {
-      font-size: 1.3em;
-      color: #00ffff;
-      margin-bottom: 10px;
-    }
-    .qr-section {
-      text-align: center;
-    }
-    .qr-section img {
-      width: 200px;
-      margin-bottom: 15px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Achievers Club Masterclass</h1>
-    <p>Unlock Your Potential. Join Our Elite Training Now!</p>
-  </header>  <div class="container">
-    <div class="form-section">
-      <h2 class="section-title">Step 1: Enter Your Details</h2>
-      <form action="https://formsubmit.co/padhiyarashish204@gmail.com" method="POST" enctype="multipart/form-data">
-        <label for="name">Full Name</label>
-        <input type="text" name="name" id="name" required /><label for="email">Email</label>
-    <input type="email" name="email" id="email" required />
-
-    <label for="phone">Phone Number</label>
-    <input type="tel" name="phone" id="phone" required />
-
-    <label for="state">State</label>
-    <input type="text" name="state" id="state" required />
-
-    <label for="city">City</label>
-    <input type="text" name="city" id="city" required />
-
-    <label for="dob">Date of Birth</label>
-    <input type="date" name="dob" id="dob" required />
-
-    <h2 class="section-title">Step 2: Make Payment</h2>
-    <div class="qr-section">
-      <img src="https://api.qrserver.com/v1/create-qr-code/?data=upi://pay?pa=ashishbheraji5532-1@okaxis&pn=AshishP&am=199&cu=INR" alt="UPI QR Code" />
-      <p>Scan this QR code or pay using UPI ID: <strong>ashishbheraji5532-1@okaxis</strong></p>
-    </div>
-
-    <label for="paymentScreenshot">Upload Payment Screenshot</label>
-    <input type="file" name="paymentScreenshot" id="paymentScreenshot" accept="image/*" required />
-
-    <button type="submit">Submit Registration</button>
-    <input type="hidden" name="_next" value="https://padhiyar67.github.io/achievers-clube/success.html" />
-    <input type="hidden" name="_captcha" value="false" />
-  </form>
-</div>
-
+  <div class="card">
+    <h1>Registration Successful!</h1>
+    <p>Thank you for registering in the Achievers Club Masterclass.<br>
+    We’ve received your details and payment successfully.</p>
+    <a href="https://t.me/achieversclube" class="btn">Join Our Telegram Group</a>
   </div>
 </body>
 </html>
