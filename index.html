@@ -1,78 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Masters Class Registration Form</title>
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #FF6B6B 0%, #FFB6B6 100%);
-            color: white;
-            text-align: center;
-            margin: 0;
-            padding: 20px;
-        }
-        .form-container {
-            background: rgba(255,255,255,0.1);
-            padding: 30px;
-            border-radius: 15px;
-            max-width: 400px;
-            margin: 50px auto;
-        }
-        input {
-            width: 90%;
-            padding: 10px;
-            margin: 10px 0;
-            border: none;
-            border-radius: 8px;
-        }
-        .cta-button {
-            background: #FF6B6B;
-            color: white;
-            padding: 15px 30px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 20px;
-            display: inline-block;
-            transition: all 0.3s ease;
-            border: none;
-            cursor: pointer;
-        }
-        .cta-button:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-        }
-        .logo {
-            margin-top: 30px;
-            max-width: 150px;
-        }
-        .tagline {
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-top: 10px;
-            color: #FF6B6B;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Masterclass Registration - Ashish Padhiyar</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Masters Class Registration Form</h1>
-    <div class="form-container">
-        <input type="text" placeholder="Name (Optional)">
-        <input type="email" placeholder="Email ID (Optional)">
-        <input type="text" placeholder="Mobile Number (Required)" required>
-        <input type="date" placeholder="Date of Birth (Required)" required>
-        <br>
-        <a href="payment.html" class="cta-button">Proceed to Payment</a>
-    </div>
-    
-    <div class="tagline">
-        <p>Start Young, Retire Young</p>
-    </div>
+  <h1>Masterclass Registration Form</h1>
+  <form action="course.html" method="GET">
+    <label>Full Name:</label><br>
+    <input type="text" name="fullname" required><br><br>
 
-    <div class="logo">
-        <img src="logo.png" alt="25 Years Column Logo"> <!-- Add your logo image path here -->
-    </div>
+    <label>Email Address:</label><br>
+    <input type="email" name="email" required><br><br>
+
+    <label>Phone Number:</label><br>
+    <input type="tel" name="phone" required><br><br>
+
+    <label>City:</label><br>
+    <input type="text" name="city" required><br><br>
+
+    <label>Date of Birth:</label><br>
+    <input type="date" name="dob" required><br><br>
+
+    <button type="submit">Next</button>
+  </form>
+
+  <p style="margin-top: 50px;">Registration under <strong>Ashish Padhiyar</strong> (Young & Energetic Mentor)</p>
 </body>
 </html>
