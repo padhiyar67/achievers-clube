@@ -1,0 +1,144 @@
+<!-- Page 1: Payment Page --><!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Achievers Club | Payment</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ffecd2, #fcb69f);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+    .card {
+      background: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      max-width: 400px;
+    }
+    h1 {
+      color: #ff5722;
+    }
+    .upi-button {
+      background: #4CAF50;
+      color: white;
+      padding: 1rem;
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+    .upi-button:hover {
+      background: #45a049;
+    }
+    img.qr {
+      width: 200px;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Pay Rs.199 to Register</h1>
+    <p>Scan the QR or Click the button below</p>
+    <img src="https://via.placeholder.com/200x200.png?text=UPI+QR" alt="QR Code" class="qr">
+    <br>
+    <a href="upi://pay?pa=ashishbheraji5532-1@okaxis&pn=Ashish%20Padhiyar&am=199&cu=INR" style="text-decoration: none;">
+      <button class="upi-button">Pay with UPI</button>
+    </a>
+    <p>After payment, <a href="form.html">click here to fill your details</a></p>
+  </div>
+</body>
+</html><!-- Page 2: Form Page --><!-- Save as form.html --><!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Masterclass Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #74ebd5, #acb6e5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    form {
+      background: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    input, button {
+      display: block;
+      width: 100%;
+      margin: 0.5rem 0;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 0.5rem;
+    }
+    button {
+      background: #007bff;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <form action="success.html">
+    <h2>Masterclass Registration Form</h2>
+    <input type="text" placeholder="Full Name" required>
+    <input type="text" placeholder="City" required>
+    <input type="date" placeholder="Date of Birth" required>
+    <input type="email" placeholder="Email" required>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html><!-- Page 3: Success Page --><!-- Save as success.html --><!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Success</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      background: #d4fc79;
+      background: linear-gradient(to right, #96e6a1, #d4fc79);
+      text-align: center;
+      padding: 4rem;
+    }
+    .card {
+      background: white;
+      padding: 2rem;
+      margin: auto;
+      max-width: 500px;
+      border-radius: 1rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    a {
+      display: block;
+      margin: 1rem 0;
+      color: #2e7d32;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Thank you for registering!</h1>
+    <p>Your registration is under <strong>Ashish Padhiyar</strong>, a Young & Dynamic Leader.</p>
+    <p>Follow on Instagram: <a href="https://instagram.com/YOUR_HANDLE" target="_blank">@YOUR_HANDLE</a></p>
+    <p>Access your exclusive resources:</p>
+    <a href="https://youtube.com/yourprivate">YouTube Course</a>
+    <a href="https://drive.google.com/yourprivatefile">Private PDF Link</a>
+    <a href="https://linktr.ee/yourlink">1 Year Free Access Link</a>
+  </div>
+</body>
+</html>
