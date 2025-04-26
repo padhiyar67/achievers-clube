@@ -1,32 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Similar head section as index.html -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Your Payment</title>
     <style>
-        .payment-card {
-            background: white;
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+            text-align: center;
+            margin: 0;
+            padding: 20px;
             color: #333;
-            border-radius: 15px;
-            padding: 30px;
-            max-width: 500px;
-            margin: 50px auto;
-            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
         }
-        .qr-code {
-            width: 200px;
-            margin: 20px auto;
-            border: 1px solid #eee;
-            padding: 10px;
+        .payment-instruction {
+            margin-top: 50px;
+            font-size: 1.2rem;
+        }
+        .cta-button {
+            background: #28a745;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 30px;
+            display: inline-block;
+            transition: all 0.3s ease;
+            border: none;
+        }
+        .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
         }
     </style>
 </head>
 <body>
-    <div class="payment-card">
-        <h2>Complete Your Registration</h2>
-        <p>Scan this UPI QR code to pay ₹199</p>
-        <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=UPI_ID@okhdfcbank" alt="UPI QR Code" class="qr-code">
-        <p>OR</p>
-        <a href="success.html" class="cta-button">I've Paid</a>
-    </div>
+    <h1>Complete Your Payment of ₹199</h1>
+    <p class="payment-instruction">Click the button below to pay via UPI apps like PhonePe, Google Pay, PayTM etc.</p>
+    <a href="upi://pay?pa=ashishbheraji5532-1@okaxis&pn=Ashish%20Padhiyar&am=199&cu=INR" class="cta-button">Make Payment</a>
+    <br><br>
+    <small>Note: Please complete the payment before proceeding.</small>
+    <br><br>
+    <a href="success.html" class="cta-button" style="background:#007bff;">I've Paid</a>
 </body>
 </html>
