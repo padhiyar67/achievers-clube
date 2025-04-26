@@ -7,89 +7,73 @@
     <style>
         body {
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
-            color: #333;
-            text-align: center;
-            margin: 0;
-            padding: 20px;
-            overflow-x: hidden;
-        }
-        .hero {
-            margin-top: 50px;
-        }
-        .course-button {
-            background: #6a11cb;
-            background: linear-gradient(to right, #2575fc, #6a11cb);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 12px 25px;
-            border-radius: 30px;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+        .success-container {
+            margin: 50px auto;
+            max-width: 800px;
+        }
+        h1 {
+            font-size: 2.5rem;
+        }
+        .courses {
+            margin-top: 30px;
+            text-align: left;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .course {
+            margin-bottom: 15px;
+        }
+        .cta-button {
+            background: #FF6B6B;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
             text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
             display: inline-block;
-            margin: 10px;
-            transition: 0.3s ease;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
         }
-        .course-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
-        }
-        .instagram-link {
-            margin-top: 40px;
-            font-size: 1rem;
-        }
-        #confetti-container {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            pointer-events: none;
-        }
-        .confetti {
-            position: absolute;
-            width: 10px;
-            height: 10px;
-            background-color: #f00;
-            opacity: 0.7;
-            animation: fall 3s linear infinite;
-        }
-        @keyframes fall {
-            to {
-                transform: translateY(100vh) rotate(360deg);
-                opacity: 0;
-            }
+        .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
         }
     </style>
 </head>
 <body>
-    <div class="hero">
-        <h1>Congratulations, Champion!</h1>
-        <h2>Welcome to Achievers Club — "Start Young, Retire Young"</h2>
-        <p>Thank you for registering under Young Ashish Padhiyar!</p>
+    <div class="success-container">
+        <h1>🎉 Registration Successful!</h1>
+        <p>Check your email for course access.</p>
 
-        <h3>Access Your Courses:</h3>
-        <a href="https://www.youtube.com/playlist?list=PLUyvyq8RwuAbgCsNOVxZ3rkXjBmGsuCTX" target="_blank" class="course-button">InstaSuccess</a>
-        <a href="https://www.youtube.com/playlist?list=PLUyvyq8RwuAa2o-LHWOthr-iIFOz70xu7" target="_blank" class="course-button">Charisma Catalyst</a>
-        <a href="https://www.youtube.com/playlist?list=PLUyvyq8RwuAYFXYQ5sNWlZihSq9Thl8YY" target="_blank" class="course-button">Sales Dynamo</a>
-
-        <div class="instagram-link">
-            <p>Follow <strong>Ashish Padhiyar</strong> on Instagram:</p>
-            <a href="https://www.instagram.com/ashishh_._90?igsh=aHJzMnd1OGdqMmNn" target="_blank" class="course-button" style="background: #E1306C;">Follow on Instagram</a>
+        <div class="courses">
+            <div class="course">
+                <h3>✅ InstaSuccess: Mastering Social Media & Building a Magnetic Personal Brand</h3>
+                <p>Learn how to grow your social media and build a powerful personal brand!</p>
+            </div>
+            <div class="course">
+                <h3>✅ Charisma Catalyst: Elevate Your Communication & Transform Your Presence</h3>
+                <p>Master your communication skills and elevate your presence.</p>
+            </div>
+            <div class="course">
+                <h3>✅ Sales Dynamo: From Basics to Brilliance in Closing Deals and Mastering Sales</h3>
+                <p>Learn the art of closing sales and becoming a master in sales strategies.</p>
+            </div>
         </div>
+
+        <p><strong>Course Value: ₹75,000</strong></p>
+        <p>But guess what? You’re getting <strong>FREE access</strong> to all of these courses!</p>
+
+        <a href="https://www.instagram.com/ashishh_._90" class="cta-button" target="_blank">Follow on Instagram</a>
     </div>
-
-    <div id="confetti-container"></div>
-
-    <script>
-        // Confetti Animation
-        function createConfetti() {
-            const confetti = document.createElement('div');
-            confetti.className = 'confetti';
-            confetti.style.left = Math.random() * window.innerWidth + 'px';
-            confetti.style.backgroundColor = hsl(${Math.random() * 360}, 100%, 50%);
-            document.getElementById('confetti-container').appendChild(confetti);
-            setTimeout(() => confetti.remove(), 3000);
-        }
-        setInterval(createConfetti, 300);
-    </script>
 </body>
 </html>
