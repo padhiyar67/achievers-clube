@@ -3,22 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Achievers Club | Home</title>
+    <title>Achievers Club | Register</title>
     <style>
         body {
             font-family: 'Poppins', sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             text-align: center;
-            padding: 0;
             margin: 0;
+            padding: 20px;
         }
-        .hero {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+        .form-container {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 400px;
+            margin: 50px auto;
+        }
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 8px;
         }
         .cta-button {
             background: #FF6B6B;
@@ -30,19 +37,23 @@
             margin-top: 20px;
             display: inline-block;
             transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
         }
         .cta-button:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 20px rgba(0,0,0,0.2);
         }
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="hero">
-        <h1 style="font-size: 3rem;">Welcome to Achievers Club!</h1>
-        <p style="font-size: 1.2rem;">Join our exclusive masterclass for ₹199 only</p>
-        <a href="payment.html" class="cta-button">Register Now</a>
+    <h2>You are registering under <br><strong>Young Ashish Padhiyar</strong></h2>
+    <div class="form-container">
+        <input type="text" placeholder="Name (Optional)">
+        <input type="text" placeholder="City (Optional)">
+        <input type="text" placeholder="Mobile Number (Optional)">
+        <br>
+        <a href="payment.html" class="cta-button">Proceed to Payment</a>
     </div>
 </body>
 </html>
