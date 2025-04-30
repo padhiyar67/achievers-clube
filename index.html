@@ -2,30 +2,74 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Masterclass Registration - Ashish Padhiyar</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Masterclass Registration Form</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #ffecd2, #fcb69f);
+      font-family: Arial, sans-serif;
+      color: #333;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #c0392b;
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    button {
+      background-color: #e74c3c;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      margin-top: 20px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #c0392b;
+    }
+  </style>
 </head>
 <body>
   <h1>Masterclass Registration Form</h1>
-  <form action="course.html" method="GET">
-    <label>Full Name:</label><br>
-    <input type="text" name="fullname" required><br><br>
+  <form action="success.html" method="get">
+    <label for="name">Full Name *</label>
+    <input type="text" id="name" name="name" required>
 
-    <label>Email Address:</label><br>
-    <input type="email" name="email" required><br><br>
+    <label for="email">Email Address *</label>
+    <input type="email" id="email" name="email" required>
 
-    <label>Phone Number:</label><br>
-    <input type="tel" name="phone" required><br><br>
+    <label for="mobile">Mobile Number *</label>
+    <input type="tel" id="mobile" name="mobile" required>
 
-    <label>City:</label><br>
-    <input type="text" name="city" required><br><br>
+    <label for="city">City *</label>
+    <input type="text" id="city" name="city" required>
 
-    <label>Date of Birth:</label><br>
-    <input type="date" name="dob" required><br><br>
+    <label for="dob">Date of Birth *</label>
+    <input type="date" id="dob" name="dob" required>
 
     <button type="submit">Next</button>
   </form>
-
-  <p style="margin-top: 50px;">Registration under <strong>Ashish Padhiyar</strong> (Young & Energetic Mentor)</p>
+  <p style="text-align:center; margin-top:20px;">Registration under <strong>Ashish Padhiyar</strong></p>
 </body>
 </html>
