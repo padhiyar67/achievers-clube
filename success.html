@@ -2,20 +2,70 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Registration Successful</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Course Access</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+      font-family: 'Segoe UI', sans-serif;
+      padding: 20px;
+      color: #2c3e50;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    .course-list {
+      max-width: 600px;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    .course {
+      margin-bottom: 15px;
+      padding: 10px;
+      border-left: 5px solid #3498db;
+    }
+    .btn {
+      display: block;
+      width: 200px;
+      margin: 20px auto;
+      text-align: center;
+      background: #27ae60;
+      color: white;
+      padding: 12px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    .insta {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .insta img {
+      width: 50px;
+    }
+  </style>
 </head>
 <body>
   <h1>Registration Successful!</h1>
-  <p>Thank you for joining the Masterclass under <strong>Ashish Padhiyar</strong>.</p>
+  <div class="course-list">
+    <h2>You now have access to these 3 courses:</h2>
+    <div class="course">1. Personality Development Mastery</div>
+    <div class="course">2. Goal Setting & Time Management</div>
+    <div class="course">3. Digital Skills for Growth</div>
+    <p>Upcoming Masterclass details will be shared with you soon via email or WhatsApp.</p>
+  </div>
 
-  <h2>Your Course Access:</h2>
-  <ul>
-    <li><a href="https://youtube.com/yourcourse" target="_blank">Private YouTube Link</a></li>
-    <li><a href="https://wa.me/yourwhatsapp" target="_blank">Join WhatsApp Support</a></li>
-    <li><a href="https://summitcircleelite.com" target="_blank">Visit Website</a></li>
-  </ul>
+  <div class="insta">
+    <p>Connect with me on Instagram:</p>
+    <a href="https://www.instagram.com/ashishh_._90?igsh=aHJzMnd1OGdqMmNn" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+      <br>@ashishh_._90
+    </a>
+  </div>
 
-  <p>Stay connected on Instagram: <a href="https://instagram.com/yourid" target="_blank">@yourid</a></p>
+  <a href="index.html" class="btn">Fill Another Form</a>
 </body>
 </html>
