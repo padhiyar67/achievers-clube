@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>ELITE MASTERCLASS REGISTRATION</title>
+  <title>Masterclass Registration Form</title>
   <style>
     :root {
       --primary: #1DB954;
@@ -30,17 +30,16 @@
     h1 {
       text-align: center;
       color: var(--primary);
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
+      font-size: 2.2rem;
+      margin-bottom: 5px;
     }
     .tagline {
       text-align: center;
-      font-size: 1.3rem;
+      font-size: 1.1rem;
       color: var(--primary);
       margin-bottom: 30px;
-      font-weight: bold;
+      font-weight: 500;
+      letter-spacing: 1px;
     }
     form {
       background: var(--light);
@@ -66,8 +65,6 @@
       font-weight: 600;
       color: var(--primary);
       font-size: 0.9rem;
-      text-transform: uppercase;
-      letter-spacing: 1px;
     }
     input, select {
       width: 100%;
@@ -85,22 +82,6 @@
       border-color: var(--primary);
       box-shadow: 0 0 0 2px rgba(29, 185, 84, 0.3);
     }
-    .input-container {
-      position: relative;
-    }
-    .input-container::after {
-      content: "✓";
-      position: absolute;
-      right: 15px;
-      top: 50%;
-      transform: translateY(-50%);
-      color: var(--primary);
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
-    input:valid + .input-container::after {
-      opacity: 1;
-    }
     button {
       background: linear-gradient(45deg, var(--primary), #27ae60);
       color: var(--dark);
@@ -112,136 +93,53 @@
       width: 100%;
       font-size: 1.1rem;
       font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 1px;
       transition: all 0.3s ease;
       box-shadow: 0 5px 15px rgba(29, 185, 84, 0.4);
-      position: relative;
-      overflow: hidden;
     }
     button:hover {
       transform: translateY(-3px);
       box-shadow: 0 8px 20px rgba(29, 185, 84, 0.6);
-    }
-    button::after {
-      content: "→";
-      position: absolute;
-      right: 20px;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 1.2rem;
-      transition: all 0.3s ease;
-    }
-    button:hover::after {
-      right: 15px;
     }
     .footer-note {
       text-align: center;
       margin-top: 30px;
       color: #B3B3B3;
       font-size: 0.9rem;
-      position: relative;
     }
     .footer-note strong {
       color: var(--primary);
       font-weight: bold;
     }
-    .footer-note::before {
-      content: "";
-      display: block;
-      width: 100px;
-      height: 2px;
-      background: linear-gradient(to right, var(--primary), transparent);
-      margin: 0 auto 15px;
-    }
-    
-    /* Animated background elements */
-    .bg-element {
-      position: fixed;
-      background: rgba(29, 185, 84, 0.1);
-      border-radius: 50%;
-      z-index: -1;
-    }
-    .bg-1 {
-      width: 300px;
-      height: 300px;
-      top: -100px;
-      right: -100px;
-      animation: float 15s infinite alternate;
-    }
-    .bg-2 {
-      width: 200px;
-      height: 200px;
-      bottom: -50px;
-      left: -50px;
-      animation: float 12s infinite alternate-reverse;
-    }
-    
-    @keyframes float {
-      0% {
-        transform: translate(0, 0);
-      }
-      50% {
-        transform: translate(-20px, -20px);
-      }
-      100% {
-        transform: translate(20px, 20px);
-      }
-    }
   </style>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="bg-element bg-1"></div>
-  <div class="bg-element bg-2"></div>
-  
   <div class="container">
-    <h1>ELITE MASTERCLASS</h1>
-    <div class="tagline">START YOUNG · RETIRE YOUNG</div>
+    <h1>Masterclass Registration Form</h1>
+    <div class="tagline">Join India's Premier Young Entrepreneurs Society</div>
     
     <form action="success.html" method="get">
-      <label for="name">Full Name</label>
-      <div class="input-container">
-        <input type="text" id="name" name="name" required>
-      </div>
+      <label for="name">Full Name *</label>
+      <input type="text" id="name" name="name" required>
       
-      <label for="email">Email Address</label>
-      <div class="input-container">
-        <input type="email" id="email" name="email" required>
-      </div>
+      <label for="email">Email Address *</label>
+      <input type="email" id="email" name="email" required>
       
-      <label for="mobile">Mobile Number</label>
-      <div class="input-container">
-        <input type="tel" id="mobile" name="mobile" required>
-      </div>
+      <label for="mobile">Mobile Number *</label>
+      <input type="tel" id="mobile" name="mobile" required>
       
-      <label for="city">City</label>
-      <div class="input-container">
-        <input type="text" id="city" name="city" required>
-      </div>
+      <label for="city">City *</label>
+      <input type="text" id="city" name="city" required>
       
-      <label for="dob">Date of Birth</label>
+      <label for="dob">Date of Birth *</label>
       <input type="date" id="dob" name="dob" required>
       
       <button type="submit">SUBMIT APPLICATION</button>
     </form>
     
     <div class="footer-note">
-      Registration under <strong>Ashish Padhiyar</strong><br>
-      India's Premier Young Entrepreneurs Society
+      Registration under <strong>Ashish Padhiyar</strong>
     </div>
   </div>
-  
-  <script>
-    // Add animation to form inputs when focused
-    document.querySelectorAll('input, select').forEach(el => {
-      el.addEventListener('focus', () => {
-        el.style.transform = 'scale(1.02)';
-      });
-      el.addEventListener('blur', () => {
-        el.style.transform = 'scale(1)';
-      });
-    });
-  </script>
 </body>
 </html>
